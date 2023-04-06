@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISRO</title>
+    <!-- Google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/cc22289122.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Css files -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <!-- Js  -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Nav-bar -->
+    <nav>
+      <h1 class="navTitle">🚀 ISRO Spacecraft | Rockets | Centers</h1>
+    </nav>
+    <!-- Main secttion -->
+    <section id="main-container">
+      <!-- Spacecraft data -->
+      <div class="box1">
+        <h1 class="dataTitle">Spacecrafts</h1>
+        <div class="spacecraftBox">
+          <ul id="spacecraftData"></ul>
+        </div>
+      </div>
+      <!-- Rockets Data -->
+      <div class="box2">
+        <h1 class="dataTitle">Launchers</h1>
+        <div class="rocketsBox">
+          <ul id="launcherstData"></ul>
+        </div>
+      </div>
+      <!-- Centers data -->
+      <div class="box3">
+        <h1 class="dataTitle">Centers</h1>
+        <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+        <input
+          type="text"
+          name=""
+          id="myInput"
+          class="inputBox"
+          placeholder="Enter State Name"
+          onkeyup="searchFun()"
+        />
+        <div class="centerBox">
+          <table id="table-data">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Place</th>
+                <th scope="col">State</th>
+              </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class="author">
+        🚀 Made by
+        <a
+          href="https://www.linkedin.com/in/sejal-patil-102b61223/"
+          target="_blank"
+          >Sejal Patil</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+/* Meddium screen styling */
+
+@media only screen and (max-width: 992px) and (min-width: 600px) {
+  /* Nav bar styling */
+
+  .navTitle {
+    font-size: 25px;
+  }
+
+  /* Main area styling */
+
+  .box1,
+  .box2 {
+    width: 48%;
+    order: 2;
+  }
+
+  .box3 {
+    width: 100%;
+    position: relative;
+    order: 1;
+    margin-bottom: 60px;
+  }
+}
+
+/* Small Screen styling */
+
+@media only screen and (max-width: 600px) {
+  /* Nav bar styling */
+
+  .navTitle {
+    font-size: 20px;
+    line-height: 1.3em;
+  }
+
+  /* Main area styling */
+
+  .box1,
+  .box2 {
+    width: 100%;
+    order: 2;
+    margin-bottom: 60px;
+  }
+
+  .box3 {
+    width: 100%;
+    position: relative;
+    order: 1;
+    margin-bottom: 60px;
+  }
+
+  .inputBox {
+    padding: 25px 25px 25px 50px;
+  }
+
+  .searchIcon {
+    top: 66px;
+  }
+}
